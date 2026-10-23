@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Название товара"/>
+
+    <EditText
+        android:id="@+id/etPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Цена"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/etTags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Теги (через запятую)"/>
+
+    <Button
+        android:id="@+id/btnSerialize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сериализовать (в JSON)"/>
+
+    <Button
+        android:id="@+id/btnDeserialize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Десериализовать (из JSON)"/>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:text="Результат появится здесь..."/>
+
+</LinearLayout>
